@@ -3,9 +3,7 @@
   <head>
   <meta charset="utf-8">
   <title>phonegap & jquery mobile boilerplate</title>
-  
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
   <link rel="stylesheet"  href="css/jquery.mobile.structure.css" />
   <link rel="stylesheet" href="css/jquery.mobile.theme.css" />
   
@@ -30,28 +28,28 @@
 
   </head>
   <body>
-   
     <div data-role="page">
-
-    	<div data-role="header">
+    <div data-role="header">
     		<h1>Single page</h1>
-    	</div><!-- /header -->
+    </div><!-- /header -->
       
-    	<div data-role="content">
-       <button type = "button" onclick="onDeviceReady()">Click me to show geolocation</button>
-
-            <p id="geolocation">
+    <div data-role="content">
+      <button type = "button" onclick="onDeviceReady()">Click me to show geolocation</button>
+        <p id="geolocation">
                 Finding geolocation....
-            </p>
+        </p>
 
-            <div id = "map" style="width: 500px; height: 500px;">
-      </div>
-    	</div><!-- /content -->
-      <script src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDzJjzZENgjM2aNQAg_7CJyVGXxNY4MHaM&callback=onDeviceReady"></script>
+         <!-- div to display the map -->
+        <div id = "map" style="width: 500px; height: 500px;">
+        </div>
+    	
+    </div><!-- /content -->
+    <!--link to api key-->   
+         <script src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDzJjzZENgjM2aNQAg_7CJyVGXxNY4MHaM&callback=onDeviceReady"></script>
 
-    	<div data-role="footer">
+    <div data-role="footer">
     		<h4>Footer content</h4>
-    	</div><!-- /footer -->
+    </div><!-- /footer -->
 
 
 
